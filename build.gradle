@@ -12,6 +12,8 @@ dependencies {
     implementation 'com.google.guava:guava:27.1-jre'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
+    testImplementation 'org.assertj:assertj-core:3.12.1'
+    
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
 }
 
