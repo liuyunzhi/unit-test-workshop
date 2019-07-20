@@ -1,10 +1,12 @@
 package com.workshop.test;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-class AppTest {
-    @Test void appHasAGreeting() {
+import static org.junit.Assert.assertNotNull;
+
+public class AppTest {
+    @Test
+    public void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }

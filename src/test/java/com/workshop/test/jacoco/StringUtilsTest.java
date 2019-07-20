@@ -1,21 +1,21 @@
 package com.workshop.test.jacoco;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class StringUtilsTest {
+public class StringUtilsTest {
 
     private StringUtils stringUtils;
 
-    @BeforeEach
-    void setUp() {
+    @Before
+    public void setUp() {
         stringUtils = new StringUtils("");
     }
 
     @Test
-    void should_return_true_giving_an_empty_string_when_checking_empty() {
+    public void should_return_true_giving_an_empty_string_when_checking_empty() {
 
         boolean result = stringUtils.isEmpty("");
 
@@ -23,7 +23,7 @@ class StringUtilsTest {
     }
 
     @Test
-    void should_return_true_giving_nul_when_checking_empty() {
+    public void should_return_true_giving_nul_when_checking_empty() {
 
         boolean result = stringUtils.isEmpty(null);
 
@@ -31,7 +31,7 @@ class StringUtilsTest {
     }
 
     @Test
-    void should_return_false_giving_A_when_checking_empty() {
+    public void should_return_false_giving_A_when_checking_empty() {
 
         boolean result = stringUtils.isEmpty("a");
 
@@ -39,7 +39,7 @@ class StringUtilsTest {
     }
 
     @Test
-    void should_return_true_giving_null_when_checking_blank() {
+    public void should_return_true_giving_null_when_checking_blank() {
 
         boolean result = stringUtils.isBlank(null);
 
@@ -47,7 +47,7 @@ class StringUtilsTest {
     }
 
     @Test
-    void should_return_true_giving_an_empty_string_when_checking_blank() {
+    public void should_return_true_giving_an_empty_string_when_checking_blank() {
 
         boolean result = stringUtils.isBlank("");
 
@@ -55,7 +55,7 @@ class StringUtilsTest {
     }
 
     @Test
-    void should_return_false_giving_A_when_checking_blank() {
+    public void should_return_false_giving_A_when_checking_blank() {
 
         boolean result = stringUtils.isBlank("a");
 
@@ -63,7 +63,7 @@ class StringUtilsTest {
     }
 
     @Test
-    void should_return_true_giving_a_space_when_checking_blank() {
+    public void should_return_true_giving_a_space_when_checking_blank() {
 
         boolean result = stringUtils.isBlank(" ");
 
@@ -71,7 +71,7 @@ class StringUtilsTest {
     }
 
     @Test
-    void should_return_false_giving_a_empty_string_when_checking_alpha() {
+    public void should_return_false_giving_a_empty_string_when_checking_alpha() {
 
         boolean result = stringUtils.isAlpha("");
 
@@ -79,7 +79,7 @@ class StringUtilsTest {
     }
 
     @Test
-    void should_return_false_giving_a_space_string_when_checking_alpha() {
+    public void should_return_false_giving_a_space_string_when_checking_alpha() {
 
         boolean result = stringUtils.isAlpha(" ");
 
@@ -87,7 +87,7 @@ class StringUtilsTest {
     }
 
     @Test
-    void should_return_true_giving_A_string_when_checking_alpha() {
+    public void should_return_true_giving_A_string_when_checking_alpha() {
 
         boolean result = stringUtils.isAlpha("a");
 

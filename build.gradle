@@ -11,18 +11,13 @@ repositories {
 dependencies {
     implementation 'com.google.guava:guava:27.1-jre'
 
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
+    testImplementation 'junit:junit:4.12'
     testImplementation 'org.assertj:assertj-core:3.12.1'
     
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
 }
 
 application {
     mainClassName = 'com.workshop.test.App'
-}
-
-test {
-    useJUnitPlatform()
 }
 
 jacocoTestReport {
