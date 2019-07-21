@@ -16,7 +16,7 @@ dependencies {
     testImplementation 'org.mockito:mockito-core:2.+'
     testImplementation 'org.powermock:powermock-module-junit4:2.0.2'
     testImplementation 'org.powermock:powermock-api-mockito2:2.0.2'
-    
+
 }
 
 application {
@@ -43,12 +43,12 @@ jacocoTestCoverageVerification {
             limit {
                 counter = 'LINE'
                 value = 'COVEREDRATIO'
-                minimum = 1.0
+                minimum = 0.8
             }
             limit {
                 counter = 'BRANCH'
                 value = 'COVEREDRATIO'
-                minimum = 1.0
+                minimum = 0.8
             }
             limit {
                 counter = 'METHOD'
